@@ -1,15 +1,15 @@
 cask "mia-for-gmail" do
-  version "2.7.2"
-  sha256 "fa4218668d953287f2943e2b488ad85aac93075173bcccf6e00ff6c1bfb24369"
+  version "2.7.4"
+  sha256 "9d0304868c8c31609d44abb68df44a8cda96dc965b4731015990578ab221c746"
 
-  url "http://www.sovapps.com/application/notifier-pro-for-gmail/mia.#{version}.zip",
+  url "https://www.sovapps.com/application/notifier-pro-for-gmail/mia.#{version}.zip",
       verified: "sovapps.com/application/notifier-pro-for-gmail/"
   name "Mia for Gmail"
   desc "Desktop email client for Gmail"
-  homepage "http://www.miaforgmail.com/"
+  homepage "https://www.miaforgmail.com/"
 
   livecheck do
-    url "http://www.sovapps.com/application/notifier-pro-for-gmail/notifier.xml"
+    url "https://www.sovapps.com/application/notifier-pro-for-gmail/notifier.xml"
     strategy :sparkle, &:short_version
   end
 

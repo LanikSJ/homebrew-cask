@@ -1,8 +1,8 @@
 cask "insta360-studio" do
-  version "5.1.0,RC_build32,ede0f3b36b4aa7af0832a1388d882f00,20240416_155631_signed"
-  sha256 "7371ffbcf513f54fd8b971c20a1233f7ceb07c2d307ac9dbb1f3f93cacdce452"
+  version "5.2.0,RC_build30,84acf671bafadec72df1d4df6dc7d2d2,20240612_173040_signed_1718184717294"
+  sha256 "5ba0f747de63a6d937c83e4d2e990e04e5b3890b20e7cd5fdb7f84ba8731e77d"
 
-  url "https://file.insta360.com/static/#{version.csv.third}/Insta360%20Studio_#{version.csv.first}(#{version.csv.second})_#{version.csv.fourth}.pkg"
+  url "https://file.insta360.com/static/#{version.csv.third}/Insta360Studio_#{version.csv.first}(#{version.csv.second})_#{version.csv.fourth}.pkg"
   name "Insta360 Studio"
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
@@ -19,7 +19,7 @@ cask "insta360-studio" do
     }ix)
     strategy :json do |json, regex|
       # Find the Insta360 Studio app
-      app = json.dig("data", "apps")&.find { |item| item["id"] == 38 }
+      app = json.dig("data", "apps")&.find { |item| item["app_id"] == 38 }
       next if app.blank?
 
       # Find the newest macOS version
@@ -40,7 +40,7 @@ cask "insta360-studio" do
     end
   end
 
-  pkg "Insta360 Studio_#{version.csv.first}(#{version.csv.second})_#{version.csv.fourth}.pkg"
+  pkg "Insta360Studio_#{version.csv.first}(#{version.csv.second})_#{version.csv.fourth}.pkg"
 
   uninstall quit:    "com.insta360.studio",
             pkgutil: [

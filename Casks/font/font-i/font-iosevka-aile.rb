@@ -1,10 +1,9 @@
 cask "font-iosevka-aile" do
-  version "30.0.1"
-  sha256 "623fc56688109db0a21dab375a5b20585acb2e8d1be53766192e03cd0af6aae3"
+  version "30.3.1"
+  sha256 "686578420fd53cf6fde1a66cfd86a3d0487e728835472bcfea92a8b46bcd0aa0"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/PkgTTC-IosevkaAile-#{version}.zip"
   name "Iosevka Aile"
-  desc "Sans-serif, slab-serif, monospace and quasi‑proportional typeface family"
   homepage "https://github.com/be5invis/Iosevka/"
 
   livecheck do

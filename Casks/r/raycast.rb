@@ -8,17 +8,15 @@ cask "raycast" do
     livecheck do
       skip "Legacy version"
     end
-
-    depends_on macos: ">= :big_sur"
   end
   on_monterey :or_newer do
     arch arm: "arm", intel: "x86_64"
 
     livecheck_arch = on_arch_conditional arm: "arm", intel: "x86"
 
-    version "1.74.1"
-    sha256 arm:   "0ee855b8654733dc6793c75f4a92860d8b66bf29216381969903d30307098ba0",
-           intel: "fdff7bcb43a58293277e8c02285c4c1ed596c97eb6b585da6b1e9c786577024f"
+    version "1.77.3"
+    sha256 arm:   "4424b3d18a231473e023c7de1c99527a280123a351039e9b66762d74ca2e0a30",
+           intel: "66532665552e9ecd34f001482fcf64d9d7c1db965c75ef972f624f70dbb06f14"
 
     url "https://releases.raycast.com/releases/#{version}/download?build=#{arch}"
 
@@ -27,8 +25,6 @@ cask "raycast" do
       regex(/Raycast[._-]v?(\d+(?:\.\d+)+)(?:[._-](\h+))[._-]#{livecheck_arch}\.dmg/i)
       strategy :header_match
     end
-
-    depends_on macos: ">= :monterey"
   end
 
   name "Raycast"
@@ -36,6 +32,7 @@ cask "raycast" do
   homepage "https://raycast.com/"
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "Raycast.app"
 

@@ -2,9 +2,9 @@ cask "katalon-studio" do
   arch arm: "%20Arm64"
   app_suffix = on_arch_conditional arm: " Arm64"
 
-  version "9.4.0"
-  sha256 arm:   "d58458003cc119ff0bec898cab26d5821497d394cc5ce7be003fa456794671eb",
-         intel: "5168eb8e700e9209cf94521823d165c071879f186b528ec2a6fe264585dba23c"
+  version "9.6.0"
+  sha256 arm:   "293e87b5cd4dd41de109d96b8f0d4284292c0bdb3921b675f1fd4655e61c3972",
+         intel: "104a8367b86907fc73b3e95031dadebd29a06b52731e75f8e2622e67c334b9a4"
 
   url "https://download.katalon.com/#{version}/Katalon%20Studio#{arch}.dmg"
   name "Katalon Studio"

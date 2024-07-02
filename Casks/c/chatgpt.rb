@@ -1,8 +1,8 @@
 cask "chatgpt" do
-  version "1.2024.134,1715807927"
-  sha256 "ee13dbcb65b9ca782ba5d438075c0035c35d20659da0c009598193b29807be0b"
+  version "1.2024.170,1719338033"
+  sha256 "7902403adebfddb5ce2145e5535f090095522e1081187fc002020e68b901c33d"
 
-  url "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_#{version.csv.second}.dmg",
+  url "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_#{version.csv.first}_#{version.csv.second}.dmg",
       verified: "persistent.oaistatic.com/sidekick/public/"
   name "ChatGPT"
   desc "OpenAI's official ChatGPT desktop app"
@@ -26,6 +26,7 @@ cask "chatgpt" do
     "~/Library/Caches/com.openai.chat",
     "~/Library/HTTPStorages/com.openai.chat",
     "~/Library/HTTPStorages/com.openai.chat.binarycookies",
+    "~/Library/Preferences/com.openai.chat.*.plist",
     "~/Library/Preferences/com.openai.chat.plist",
     "~/Library/Saved Application State/com.openai.chat.savedState",
   ]

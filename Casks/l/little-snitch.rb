@@ -1,6 +1,6 @@
 cask "little-snitch" do
-  version "5.7.6"
-  sha256 "f0a9905f0f4222273febf4f1ae1a330770a064b7454583bd48e8152cc4bb30f8"
+  version "6.0.2"
+  sha256 "bd46d1bd5f41eaac6a205acf6732f0f3a1a07b8239f0b1a948d07c37419d4385"
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   name "Little Snitch"
@@ -21,7 +21,11 @@ cask "little-snitch" do
   end
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  conflicts_with cask: [
+    "little-snitch@4",
+    "little-snitch@5",
+  ]
+  depends_on macos: ">= :sonoma"
 
   app "Little Snitch.app"
 

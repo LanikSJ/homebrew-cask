@@ -1,6 +1,6 @@
 cask "gitify" do
-  version "5.5.0"
-  sha256 "e9da9c4b3a8065eee58d3e69cca808ab0264b1bc8094c0455aa3c79973408be8"
+  version "5.9.0"
+  sha256 "49562c225d02d955f6f850ca6ed9924f47a3c4247079c594ca2b7e7c96cca7b8"
 
   url "https://github.com/gitify-app/gitify/releases/download/v#{version}/Gitify-#{version}-universal-mac.zip"
   name "Gitify"
@@ -11,6 +11,8 @@ cask "gitify" do
     url :url
     strategy :github_latest
   end
+
+  auto_updates true
 
   app "Gitify.app"
 
@@ -30,9 +32,12 @@ cask "gitify" do
   ]
 
   zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.gitify.sfl*",
     "~/Library/Application Support/gitify",
-    "~/Library/Preferences/com.electron.gitify.helper.plist",
-    "~/Library/Preferences/com.electron.gitify.plist",
+    "~/Library/Caches/com.electron.gitify*",
+    "~/Library/Caches/gitify-updater",
+    "~/Library/HTTPStorages/com.electron.gitify",
+    "~/Library/Preferences/com.electron.gitify*.plist",
     "~/Library/Saved Application State/com.electron.gitify.savedState",
   ]
 end

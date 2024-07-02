@@ -1,10 +1,9 @@
 cask "font-iosevka-etoile" do
-  version "30.0.1"
-  sha256 "8948cc248f60f517d3e6a48026492a34dba8621513e52717654485374f197862"
+  version "30.3.1"
+  sha256 "07272e67a63331fc9ba71c7714888bd5d2c39a938f2a4ab823118e8aea90cafc"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/PkgTTC-IosevkaEtoile-#{version}.zip"
   name "Iosevka Etoile"
-  desc "Sans-serif, slab-serif, monospace and quasi‑proportional typeface family"
   homepage "https://github.com/be5invis/Iosevka/"
 
   livecheck do

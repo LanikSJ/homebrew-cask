@@ -17,8 +17,6 @@ cask "deepl" do
         end
       end
     end
-
-    depends_on macos: ">= :catalina"
   end
   on_big_sur do
     version "24.2.1798840"
@@ -29,12 +27,10 @@ cask "deepl" do
     livecheck do
       skip "Legacy version"
     end
-
-    depends_on macos: ">= :big_sur"
   end
   on_monterey :or_newer do
-    version "24.4.2912025"
-    sha256 "29283358a53110abe658dea93db7e4f2845439dca0f1e9a12aa37a65ac5315dc"
+    version "24.6.11055741"
+    sha256 "2cfa6c73ae2e5ae6b90a40e543cde0ee9362fb68097864409e6167abd12bb11b"
 
     url "https://www.deepl.com/macos/download/#{version.major_minor}/#{version.patch}/DeepL.tar.gz"
 
@@ -50,8 +46,6 @@ cask "deepl" do
         end
       end
     end
-
-    depends_on macos: ">= :monterey"
   end
 
   name "DeepL"
@@ -59,6 +53,7 @@ cask "deepl" do
   homepage "https://www.deepl.com/"
 
   auto_updates true
+  depends_on macos: ">= :catalina"
 
   app "DeepL.app"
 

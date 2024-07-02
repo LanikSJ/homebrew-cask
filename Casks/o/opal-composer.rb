@@ -1,6 +1,6 @@
 cask "opal-composer" do
-  version "1.4.1,15"
-  sha256 "e3bb5d4463088b291ad407262cd6cb768db39f77a33cc1ba5e82885a68027209"
+  version "1.4.4,22"
+  sha256 "9bfbcacfd68c853abdc1d8ebabc14402168f7f0412b8a71ad1ea8de2ca2cb880"
 
   url "https://updates.opal.camera/release/Opal_Composer_#{version.csv.first}_#{version.csv.second}.dmg",
       verified: "updates.opal.camera/release/"
@@ -13,6 +13,7 @@ cask "opal-composer" do
     strategy :sparkle
   end
 
+  auto_updates true
   depends_on macos: ">= :monterey"
 
   app "Opal Composer.app"

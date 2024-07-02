@@ -19,12 +19,10 @@ cask "lightkey" do
         end
       end
     end
-
-    depends_on macos: ">= :big_sur"
   end
   on_ventura :or_newer do
-    version "4.8.2"
-    sha256 "068721468f5ba8cd33ab8cd959bd228203f378639c44e3de39ecf9386d0316ba"
+    version "4.8.3"
+    sha256 "093704b225818ff99a790c7cfa323e8e91b56e6a26ee43f609cbf430ed44bbc3"
 
     # Upstream also publishes legacy versions (with a lower minor version) in
     # the appcast, so the first `item` after sorting by `pubDate`/`version` may
@@ -36,8 +34,6 @@ cask "lightkey" do
         items.map(&:version)
       end
     end
-
-    depends_on macos: ">= :ventura"
   end
 
   url "https://lightkeyapp.com/download/Lightkey-#{version.dots_to_hyphens}/LightkeyInstaller.zip"
@@ -46,6 +42,7 @@ cask "lightkey" do
   homepage "https://lightkeyapp.com/"
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   pkg "LightkeyInstaller.pkg"
 

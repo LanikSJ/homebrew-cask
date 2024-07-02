@@ -1,6 +1,6 @@
 cask "herd" do
-  version "1.6.1"
-  sha256 "88ec4f126d92c061a0de64b9719521299a91427f01a521c5e23804fe34244f1d"
+  version "1.8.0"
+  sha256 "4854b66cc8a8ab8cf00349b53203fc25c2244e5290c0a0872e49aeec3208fbad"
 
   url "https://download.herdphp.com/app_versions/Herd_#{version}.dmg",
       verified: "download.herdphp.com/app_versions/"

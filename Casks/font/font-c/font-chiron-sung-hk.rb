@@ -1,11 +1,10 @@
 cask "font-chiron-sung-hk" do
-  version "1.011"
-  sha256 "67334720bcc01e043b9acebcfe6aa5ad023837b89650f448e13ec4274aae9c36"
+  version "1.012"
+  sha256 "554404b43f2eab11182220964d959dfaa609638cec8fb950604cc6ed80b5a373"
 
-  url "https://github.com/chiron-fonts/chiron-sung-hk/archive/refs/tags/v#{version}.zip"
+  url "https://github.com/chiron-fonts/chiron-sung-hk/archive/refs/tags/v#{version}.tar.gz"
   name "Chiron Sung HK"
   name "昭源宋體"
-  desc "Modern, region-agnostic traditional Chinese serif typeface"
   homepage "https://github.com/chiron-fonts/chiron-sung-hk"
 
   font "chiron-sung-hk-#{version}/VAR/ChironSungHKItVF.otf"

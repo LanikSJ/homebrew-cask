@@ -1,9 +1,9 @@
 cask "devpod" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.5.6"
-  sha256 arm:   "2afcd9b2dd7aafce0da97d50a2579fcc7c9389f569c6d991c8c53833e5f6d677",
-         intel: "646696caf79fcd8688accc160384d85010b5aa0d2a87a67d1665aa971ca65c3a"
+  version "0.5.16"
+  sha256 arm:   "f0552731f89bd06f365319147afc549b190a935071f6c4a9eb8f478e7878cb09",
+         intel: "152cf86b094bb82b35f873f0416a58c470d7c3b55585f37435d7e00d332f288c"
 
   url "https://github.com/loft-sh/devpod/releases/download/v#{version}/DevPod_macos_#{arch}.dmg",
       verified: "github.com/loft-sh/devpod/"

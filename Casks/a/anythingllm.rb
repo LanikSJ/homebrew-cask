@@ -1,18 +1,18 @@
 cask "anythingllm" do
   arch arm: "-Silicon"
 
-  version "1.5.4"
-  sha256 arm:   "19a01db61dfeec3bf37ec70bb6e6df3810529f09463e667aa6c8a946d17f4c32",
-         intel: "141525b513bed1ddeb22bc217cb9547967f7dbf1d4cc364e60456039b7d9f3ef"
+  version "1.5.8"
+  sha256 arm:   "816797207043cb1d8eeb8ce13f37a38252d774d84c773ce28b964d921deb533e",
+         intel: "3aa886db87116209630caac3d408d9903fc2dd3b2752baa65dbe27b94cdb2654"
 
-  url "https://s3.us-west-1.amazonaws.com/public.useanything.com/latest/AnythingLLMDesktop#{arch}.dmg",
-      verified: "s3.us-west-1.amazonaws.com/public.useanything.com/"
+  url "https://s3-us-west-1.amazonaws.com/public.useanything.com/latest/AnythingLLMDesktop#{arch}.dmg",
+      verified: "s3-us-west-1.amazonaws.com/public.useanything.com/"
   name "AnythingLLM"
   desc "Private desktop AI chat application"
   homepage "https://useanything.com/"
 
   livecheck do
-    url "https://s3.us-west-1.amazonaws.com/public.useanything.com/latest/version.txt"
+    url "https://s3-us-west-1.amazonaws.com/public.useanything.com/latest/version.txt"
     regex(/(\d+(?:\.\d+)+)/i)
   end
 

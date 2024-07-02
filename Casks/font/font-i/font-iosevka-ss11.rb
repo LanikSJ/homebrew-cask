@@ -1,10 +1,9 @@
 cask "font-iosevka-ss11" do
-  version "30.0.1"
-  sha256 "13bf7a55ffddb25f2d04b9f2b74db4eee06b59271d4bbcfcab61d730932a6e7f"
+  version "30.3.1"
+  sha256 "2c8606def74fbc7c7f477059927c98078baabd9475d0adaebbeaf3cb3f64a5c5"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/PkgTTC-IosevkaSS11-#{version}.zip"
   name "Iosevka SS11"
-  desc "Sans-serif, slab-serif, monospace and quasi‑proportional typeface family"
   homepage "https://github.com/be5invis/Iosevka/"
 
   livecheck do

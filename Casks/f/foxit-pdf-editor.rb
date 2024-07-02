@@ -1,6 +1,6 @@
 cask "foxit-pdf-editor" do
-  version "13.1.0"
-  sha256 "fe6840d915288f1656e5c3b62874f2e4792a790ac8722e7c7b6001f5f12630bb"
+  version "13.1.2"
+  sha256 "8c976e36008d60ad666a1f86eb141c28dcdc9fcfab056be43ab326b864db0707"
 
   url "https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/#{version.major}.x/#{version}/FoxitPDFEditor#{version.no_dots}.L10N.Setup.pkg",
       verified: "cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/"

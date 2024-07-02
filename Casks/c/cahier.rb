@@ -1,6 +1,6 @@
 cask "cahier" do
-  version "0.4.8"
-  sha256 "bbe3a59f509fb3d3b1ba8919b12a48b906f7030e4c8f122993cd2b0abd23313f"
+  version "0.7.0"
+  sha256 "083ae0f5ed875d8f5d3007e66e45955d365f5034052b691c242c8101bb29037e"
 
   url "https://getcahier.com/releases-macos/cahier-#{version}.dmg"
   name "Cahier"
@@ -24,8 +24,4 @@ cask "cahier" do
         "~/Library/Saved Application State/org.Cahier-App.Cahier.savedState",
       ],
       rmdir: "~/Documents/Cahier"
-
-  caveats do
-    requires_rosetta
-  end
 end

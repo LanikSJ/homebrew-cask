@@ -1,6 +1,6 @@
 cask "whatsapp@legacy" do
-  version "2.2416.2"
-  sha256 "4697863bd8c8a26d1a7a944e873af40d8b288a9780d04667d894391e27b6a4a4"
+  version "2.2422.51"
+  sha256 "988e5021884a37b0bd776043dba2e8b3e73d5cd8b6a0b57e1b54996631dfa050"
 
   url "https://web.whatsapp.com/desktop/mac/files/release-#{version}.zip"
   name "WhatsApp Legacy"

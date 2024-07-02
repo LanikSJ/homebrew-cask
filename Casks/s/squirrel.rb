@@ -1,6 +1,6 @@
 cask "squirrel" do
-  version "0.18"
-  sha256 "52522e2c5083a718bb7c2d2ed153cb5cfb001e040ef34cbe1b99faa3caf48266"
+  version "1.0.2"
+  sha256 "2912bf3435d5c85aa87b0eaa3f08a487888b8bbbe3b48ea0ccef1a5f8215cebf"
 
   url "https://github.com/rime/squirrel/releases/download/#{version}/Squirrel-#{version}.pkg",
       verified: "github.com/rime/squirrel/"

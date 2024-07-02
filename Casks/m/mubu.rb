@@ -1,6 +1,6 @@
 cask "mubu" do
-  version "4.0.2"
-  sha256 "f78590040b39d5b0de9be0fd518d5631fee3fa4a88684b2fd318168f32714de1"
+  version "4.0.4"
+  sha256 "55a0e49e41a674a356e67c498b8672cc63e92748f955085b0340d92bacf3deb2"
 
   url "https://mubu-assets.tos-cn-shanghai.volces.com/client/Mubu-#{version}.dmg",
       verified: "mubu-assets.tos-cn-shanghai.volces.com/client/"

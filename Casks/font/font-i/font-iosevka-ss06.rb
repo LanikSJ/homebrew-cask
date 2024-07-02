@@ -1,10 +1,9 @@
 cask "font-iosevka-ss06" do
-  version "30.0.1"
-  sha256 "d6cad5f59ec05a5be07efa8aa23f24d21e965ae03c5c49ae716f89ebb573180b"
+  version "30.3.1"
+  sha256 "18c9f2c7511a5c1183a893fb026ff73b4cc286f04803720dde221ed3109f8dbd"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/PkgTTC-IosevkaSS06-#{version}.zip"
   name "Iosevka SS06"
-  desc "Sans-serif, slab-serif, monospace and quasi‑proportional typeface family"
   homepage "https://github.com/be5invis/Iosevka/"
 
   livecheck do

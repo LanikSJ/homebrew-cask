@@ -1,10 +1,9 @@
 cask "font-iosevka-ss14" do
-  version "30.0.1"
-  sha256 "ba4f30a4c776a9c1b1446f77c4c1cd23f3c453d50a674498e75bd303bd2cc9c7"
+  version "30.3.1"
+  sha256 "0a545be6ee8d86c7422a19f3eabd8cca37ed182e3964bd96d7a73108555770f0"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/PkgTTC-IosevkaSS14-#{version}.zip"
   name "Iosevka SS14"
-  desc "Sans-serif, slab-serif, monospace and quasi‑proportional typeface family"
   homepage "https://github.com/be5invis/Iosevka/"
 
   livecheck do

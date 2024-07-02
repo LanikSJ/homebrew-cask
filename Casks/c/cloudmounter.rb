@@ -1,5 +1,5 @@
 cask "cloudmounter" do
-  version "4.5"
+  version "4.6"
   sha256 :no_check
 
   url "https://cdn.electronic.us/products/cloudmounter/mac/download/cloudmounter.dmg",
@@ -13,6 +13,7 @@ cask "cloudmounter" do
     strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   depends_on macos: ">= :mojave"
 
   app "CloudMounter.app"
